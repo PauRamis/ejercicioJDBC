@@ -22,7 +22,12 @@ public class App {
         Connection con = DBUtil.createConnectionFromProperties("res/connection.properties");
         LibroDao libroDao  = new LibroDaoMysql(con);
 
-        List<Libro> libros = libroDao.findByAutor("brand");
+        //List<Libro> libros = libroDao.findByAutor("brand");
+        List<Libro> libros = libroDao.findByEditorial("debolsillo");
+
+        for (var l: libros){
+            System.out.println(l);
+        }
 
     }
 
