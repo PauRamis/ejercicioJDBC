@@ -6,5 +6,4 @@ public interface UsuarioDao {
 
     boolean createUser(String nombreUsuario, String telefono, String dirección);
 
-
 }
